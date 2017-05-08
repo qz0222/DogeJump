@@ -129,3 +129,24 @@ h3 a {color: #5a5816}
 .select div span:last-of-type{
   font-size: 14px;
 }
+
+#gameOverMenu{
+  background-image: url(../images/wining.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#gameOverMenu h1{
+  font-weight: bold;
+  color:red;
+}
+#gameOverMenu #go_score{
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color:rgb(158, 237, 88);
+}
+
+#gameOverMenu a{
+  background-color: rgba(244, 163, 41, 0.5);
+}
