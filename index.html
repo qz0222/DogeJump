@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DogeJump</title>
+    <script src="./lib/jquery-3.2.1.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/master.css">
+  </head>
+  <body >
+    <div class='container'>
+      <canvas id="canvas" width="300" height="300"></canvas>
+
+      <div id="mainMenu">
+  			<h1>Doge Jump</h1>
+  			<h3></h3>
+  			<h3>by <a href="https://www.linkedin.com/in/zheng-qian/" target="_blank">Zheng Qian</a></h3>
+        <div class='select'>
+          <div>
+            <span>DOGE!</span>
+            <span>Every jump has a chance to become SuperJump, also ... has a chance to break platform</span>
+          </div>
+          <div>
+            <span>Doge</span>
+            <span></span>
+          </div>
+          <div>
+            <span>Dogiee</span>
+            <span>Can jump on fake platforms, jump higher on moving platforms, lower on other platforms</span>
+          </div>
+        </div>
+
+  			<p class="info">
+  				use
+  				<span class="key left">←</span>
+  				<span class="key right">→</span>
+  				to move and space to (re) start...
+  			</p>
+  			<a class="button" href="javascript:gameinit()">Play</a>
+  		</div>
+
+  		<div id="gameOverMenu">
+  			<h1>game over!</h1>
+  			<h3 id="go_score">you scored 0 points</h3>
+
+  			<a class="button" href="javascript:reset()">Restart</a>
+  			<a id="tweetBtn" target="_blank" class="button tweet" href="#">Tweet score</a>
+
+  			<a id="fbBtn" target="_blank" class="button fb" href="#">Post on FB</a>
+  		</div>
+
+
+
+
+      <div class='preload'>
+        <img id='doge-left' src='./images/doge-left.png'/>
+        <img id='doge-left-land' src='./images/doge-left-land.png'/>
+        <img id='doge-right' src='./images/doge-right.png'/>
+        <img id='doge-right-land' src='./images/doge-right-land.png'/>
+
+        <img id='big-doge-left' src='./images/big-doge-left.png'/>
+        <img id='big-doge-left-down' src='./images/big-doge-left-down.png'/>
+        <img id='big-doge-left-up' src='./images/big-doge-left-up.png'/>
+        <img id='big-doge-right' src='./images/big-doge-right.png'/>
+        <img id='big-doge-right-down' src='./images/big-doge-right-down.png'/>
+        <img id='big-doge-right-up' src='./images/big-doge-right-up.png'/>
+
+
+
+        <img id='background' src='./images/backgrounds.jpg'/>
+      </div>
+
+      <div id="scoreBoard">
+  			<p id="score">0</p>
+  		</div>
+
+    </div>
+    <script src="./lib/doge.js" charset="utf-8"></script>
+  </body>
+</html>
